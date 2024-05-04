@@ -58,8 +58,12 @@ const movieSchema = mongoose.Schema({
     createdAt:{
         type:Date,
         default:Date.now
+    },
+    isBookmarked: {
+        type: Boolean,
+        default: false // default value is false
     }
-})
+});
 
 const Movies = mongoose.model('Movies', movieSchema);
-export default Movies
+export default Movies;

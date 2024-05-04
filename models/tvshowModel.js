@@ -58,8 +58,12 @@ const tvshowsSchema = mongoose.Schema({
     createdAt:{
         type:Date,
         default:Date.now
+    },
+    isBookmarked: {
+        type: Boolean,
+        default: false // default value is false
     }
-})
+});
 
 const tvShows = mongoose.model("tvShows", tvshowsSchema);
-export default tvShows
+export default tvShows;
