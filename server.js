@@ -10,7 +10,7 @@ import trendingRouter from "./routes/trendingRoutes.js"
 import recommendRouter from "./routes/recommendRoutes.js"
 import moviesRouter from "./routes/moviesRoutes.js"
 import bookmarkRouter from "./routes/bookmarkRoutes.js"
-import searchRouter from "./routes/searchRouter.js"
+import searchRouter from "./routes/searchRoutes.js"
 
 dotenv.config(); // using dotenv 
 const app = Express(); // instances  
@@ -37,6 +37,7 @@ app.use("/recommends",recommendRouter)
 app.use("/movies",moviesRouter)
 app.use("/bookmarks",bookmarkRouter)
 app.use("/search",searchRouter)
+
 
 const port = process.env.PORT; 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
