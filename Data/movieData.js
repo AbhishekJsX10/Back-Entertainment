@@ -14,6 +14,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt1375666/"},
       "trending": true,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-qDRs9IfyHPaG4VU_5dafhaGl7Z1JbuEAiQ&s"
     },
     {
@@ -29,6 +30,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0111161/"},
       "trending": false,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNGf2ZOmQ8uF2ruLkn5HfEAbAsMMovxFYzgg&s"
     },
     {
@@ -44,6 +46,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0068646/"},
       "trending": false,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAh95BNXdSLsRb8RrMTO3I_ifgx03PC9to1Q&s"
     },
     {
@@ -59,6 +62,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0468569/"},
       "trending": true,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMljMw63tO_7YFxpUwq9s-l7gmhW9J-9sHA&s"
     },
     {
@@ -74,6 +78,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0110912/"},
       "trending": false,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoylu9w5b-VPHYMQ_kC78fPtxg-ykj-G73A&s"
     },
     {
@@ -89,6 +94,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0109830/"},
       "trending": true,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsueo6VjkMadOOVVyrcevOpgE7ObTfvao09Q&s"
     },
     {
@@ -104,6 +110,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0133093/"},
       "trending": true,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7AwCkvzzn-BIuXEn-GabBiFFw7P_hTFE_Ww&s"
     },
     {
@@ -119,6 +126,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0816692/"},
       "trending": false,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi4LdSEYVzkeTcd5B_1WSKxeJtNnOW6mP9vg&s"
     },
     {
@@ -134,6 +142,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0120737/"},
       "trending": false,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTr4_wxT_gssRRuzgm0mYtzaLeuxmXj8hZqQ&s"
     },
     {
@@ -149,6 +158,7 @@ const moviesData=[
       "links": {"IMDb": "https://www.imdb.com/title/tt0361748/"},
       "trending": true,
       "itemType": "Movie",
+      "isBookmarked": false,
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRyEdAJz1dR5NeV7QQESlQxjoVJ0JMaANmg&s"
     },
     {
@@ -164,6 +174,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0407887/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQva1OvJflfM30cTiyQFGYz15gwbPtqzakCTQ&s"
     },
     {
@@ -179,6 +190,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0108052/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-VeLanGQbzmZjx3Z8qBP1-Z8jZc7J0W5JA&s"
       },
       {
@@ -194,6 +206,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0137523/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvizpaSMv4nTBXQ5x4InFXw3Mov1XuDermaQ&s"
       },
       {
@@ -209,6 +222,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0102926/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RdmKEOCKCr-prHNntZ_2bcLVBJ8GnVejmw&s"
       },
       {
@@ -224,6 +238,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0099685/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWK-QHQN1NrerQbKGZQp9lX1Cw7MtH4_e59Q&s"
       },
       {
@@ -239,6 +254,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0114814/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhSaKCRZGEewwxuJNUJdwo-nLkGK_1ZnIUA&s"
       },
       {
@@ -254,6 +270,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0120689/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLqC4eE3szWScGGbUsllkj_16pFJDe-aamWw&s"
       },
       {
@@ -269,6 +286,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0172495/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPYQ_tpu6a-n8Gj8XeZi84D1IZcxZJquEMkA&s"
       },
       {
@@ -284,6 +302,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0482571/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRNXRH9DhkkSJNRA5Q6oKQ2ZJBuOSFnOpR5w&s"
       },
       {
@@ -299,6 +318,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt0499549/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThO32F1FPbjmD_TLrKW7r5BlXcv9j47wW0Qg&s"
       },
       {
@@ -314,6 +334,7 @@ const moviesData=[
         "links": {"IMDb": "https://www.imdb.com/title/tt1675434/"},
         "trending": false,
         "itemType": "Movie",
+        "isBookmarked": false,
         "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReuuUhHADAHso3ZCZIQLNj8qo1spDOjnNm8g&s"
       }
 ]

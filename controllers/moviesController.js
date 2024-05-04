@@ -29,7 +29,7 @@ export async function deleteMovie(req,res){
         const { title } = req.body
         const isMovie = await Movies.findOne({title})
         if(!isMovie){
-            return response.status(400).json({
+            return res.status(400).json({
                 success:false,
                 message:"Movie does not exist"
             })
@@ -52,7 +52,7 @@ export  async function addMovie(req,res){
         const { title,rating,length,language,year,status,genre,synopsis,casts,links,trending,itemType,imageUrl } = req.body
         const isMovie = await Movies.findOne({title})
         if(isMovie){
-            return response.status(400).json({
+            return res.status(400).json({
                 success:false,
                 message:"Movie already exists"
             })
