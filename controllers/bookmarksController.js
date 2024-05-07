@@ -82,7 +82,7 @@ export async function addbookMark(req, res) {
         const bookmark = new bookmarked({ userId, itemId, itemType });
         await bookmark.save();
         // res.status(201).json({message:"",bookmark});
-        res.status(201).json({ message: 'Bookmark deleted successfully',bookmark });
+        res.status(201).json({ message: 'Bookmark added successfully',bookmark });
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Failed to create bookmark' });
