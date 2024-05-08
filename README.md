@@ -9,10 +9,9 @@ The Entertainment App is a full-stack application designed to provide users with
 
 ## Important Links
 
-- API Documentation : https://documenter.getpostman.com/view/30096390/2sA3JGeicf
-- Video Explanation: https://youtu.be/r7oX1R0dADk
-- Database Design: [Google Docs Link](https://docs.google.com/document/d/1hbnF4K5TD7rX6tV_f1QHFxl1lUa7iwCuzthboU_MwQM/edit?usp=sharing)
-- Best Practices : [Google Docs Link](https://docs.google.com/document/d/1KuIXsouPjAgOUs59XOcKuDiKuu74_20GStGO6DTDx6g/edit?usp=sharing)
+- API Documentation : https://documenter.getpostman.com/view/32328160/2sA3JJAiQg
+- Database Design: [Google Docs Link](https://docs.google.com/document/d/1DEoH1G6ucIP3hkTpAg6_QE7NjipAojlucyWJHhyk7Bg/edit?usp=sharing)
+- Best Practices : [Google Docs Link](https://docs.google.com/document/d/1gpsxJt2ORMTbFzmMjzzby_3DhWvN5fkvGZrAOATw4pk/edit?usp=sharing)
 
 
 ## Features
@@ -42,7 +41,6 @@ The Entertainment App is a full-stack application designed to provide users with
 2.  **Navigate to the Backend Directory:** Move into the backend directory of the project.
 
     ```sh
-    cd entertainment-web-app/backend
     ```
 
 3.  **Install Dependencies:** Install the necessary dependencies using npm.
@@ -57,7 +55,6 @@ The Entertainment App is a full-stack application designed to provide users with
     MONGODB_URL= "Mongodb connection string our url "
     TOKEN= "Secret token for authentication & cookies"
     NODE_ENV="Current environment - Development or Production"
-    TMDB_KEY="TMDB api key "
     FRONTEND_URL="Frontend url"
     ```
 
@@ -82,7 +79,6 @@ The Entertainment App is a full-stack application designed to provide users with
 
 ### Backend Project Structure
 
-- **Constant:** Contains TMDB api end points
 - **Controllers:** Contains logic for handling API requests.
 - **Middleware:** Includes middleware for authentication.
 - **Models:** Defines the schema for database collections.
@@ -90,29 +86,35 @@ The Entertainment App is a full-stack application designed to provide users with
 - **Utils:** Containers Helper Function to fetch media & to generate cookie.
 
 <pre>
-|-- src
-    |-- constants 
-        |-- media.constant.js
     |-- controllers
-        |-- bookmark.controllers.js 
-        |-- media.controllers.js 
-        |-- mediaDetail.controllers.js 
-        |-- mediaImage.controllers.js 
-        |-- mediaSearch.controllers.js 
-        |-- user.controller.js
+        |-- BlogControllers.js 
+        |-- bookmarkController.js.js 
+        |-- moviesController.js 
+        |-- recommendedController.js 
+        |-- trendingController.js 
+        |-- userController.js
+    |-- Data
+        |-- movieData.js
+        |-- tvShowsData.js
     |-- middleware
         |-- auth.js 
     |-- models 
-        |-- bookmark.models.js 
-        |-- user.models.js 
+        |-- blogsModels.js 
+        |-- bookmarkModels.js 
+        |-- movieModels.js 
+        |-- tvshowModels.js 
+        |-- userModels.js 
     |-- routes 
-        |-- bookmark.routes.js 
-        |-- media.routes.js 
-        |-- user.routes.js 
+        |-- blogRout.js 
+        |-- bookmarkRoutes.js 
+        |-- moviesRoutes.js 
+        |-- recommendedRoutes.js 
+        |-- searchRoutes.js 
+        |-- trendingRoutes.js 
+        |-- userRoutes.js 
     |-- utils
-        |-- media.utils.js 
-        |-- user.utils.js 
-    |-- app.js 
+        |-- feature.js
+    |-- server.js 
 |-- .env
 |-- .gitignore
 |-- index.js
@@ -127,7 +129,6 @@ The Entertainment App is a full-stack application designed to provide users with
 1. **Navigate to the Frontend Directory:** Move into the frontend directory of the project.
 
    ```sh
-   cd entertainment-web-app/frontend
    ```
 
 2. **Install Dependencies:** Install the necessary dependencies using npm.
@@ -175,51 +176,31 @@ The Entertainment App is a full-stack application designed to provide users with
 <pre>
 |-- src
     |-- assets 
-    |-- components
-        |-- AuthComponents 
-            |-- Login.jsx 
-            |-- Logout.jsx 
-            |-- Register.jsx 
-        |-- CssComponents
-            |-- Loading.jsx
-            |-- Toast.jsx
-        |-- HomeMedia
-            |-- MediaRecommend.jsx
-            |-- MediaTrending.jsx
-        |-- MediaComponents
-            |-- Media.jsx
-            |-- MediaBookmark.jsx
-            |-- MediaBookmarked.jsx 
-            |-- MediaImage.jsx
-            |-- MediaInfo.jsx
-            |-- MediaPlay.jsx
-        |-- MediaDetails
-            |-- Details.jsx
-            |-- MediaCast.jsx
-            |-- MediaGenre.jsx 
-            |-- MediaHeading.jsx
-            |-- MediaImage.jsx
-            |-- MediaInfo.jsx
-            |-- MediaLink.jsx
-            |-- MediaRatings.jsx
-            |-- MediaSynopsis.jsx
-        |-- Error404.jsx
-        |-- Header.jsx
-        |-- MoreMedia.jsx
-        |-- SearchBar.jsx
-        |-- SearchResult.jsx
+    |-- Components
+        |-- AutoScrollCarousel.jsx  
+        |-- Loader.jsx  
+        |-- Navbar2.jsx  
+        |-- NormalCard.jsx  
+        |-- Rates.jsx  
+        |-- RatingSection.jsx  
+        |-- SearchBar.jsx  
+        |-- SingleCard.jsx  
     |-- context
-        |-- MyContext.js
-        |-- MyState.js  
-    |-- pages
-        |-- Bookmarks.jsx 
-        |-- Home.jsx 
-        |-- Movie.jsx 
-        |-- Profile.jsx 
-        |-- Tv.jsx  
-    |-- utils 
-        |-- baseUrl.js 
-        |-- fetchMultiMedia.js
+        |-- Context.jsx
+        |-- State.jsx
+    |-- Pages
+        |-- BookMarkHelp.jsx
+        |-- BookMarks.jsx
+        |-- Home.jsx
+        |-- Login.jsx
+        |-- MovieDisplay.jsx
+        |-- Movies.jsx
+        |-- Register.jsx
+        |-- SearchPage.jsx
+        |-- TvShowDisplay.jsx
+        |-- TvShows.jsx
+    |-- Stylesheets
+        |-- LoaderStyle.css
     |-- App.jsx 
     |-- main.jsx 
 |-- .eslintrc.cjs
