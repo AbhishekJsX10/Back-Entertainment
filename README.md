@@ -1,6 +1,6 @@
 # Entertainment App
 
-The Entertainment App is a full-stack application designed to provide users with access to a vast collection of movies and TV shows, leveraging the TMDB API for fetching media details. It features user authentication, media exploration, and personal bookmarks, offering a comprehensive and personalized media browsing experience.
+The Entertainment App is a full-stack application designed to provide users with access to a vast collection of movies and TV shows, leveraging the Personal API for fetching media details. It features user authentication, media exploration, and personal bookmarks, offering a comprehensive and personalized media browsing experience.
 
 ## Deployment
 
